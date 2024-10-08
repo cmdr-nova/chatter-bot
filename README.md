@@ -23,7 +23,7 @@ nano path/to/script/statuses.json
 nano path/to/script/replies.json
 ```
 
-Then, schedule it! This is not a bot that is running at all times, so statues and replies will go out *only* when it runs (to conserve resources, we don't need a bot that's up and running at all times).
+Then, schedule it! This is not a bot that is running at all times, so statuses and replies will go out *only* when it runs (to conserve resources, we don't need a bot that's up and running at all times).
 
 ```
 chmod +x path/to/script/chatter-bot.py
