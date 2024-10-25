@@ -2,7 +2,8 @@ import json
 import random
 from mastodon import Mastodon
 
-REPLIED_MENTIONS_FILE = 'replied_mentions.json'
+# Needs full path when using a cronjob
+REPLIED_MENTIONS_FILE = 'path/to/replied/replied_mentions.json'
 
 # Load replied mentions from file
 def load_replied_mentions(file_path):
@@ -101,8 +102,8 @@ if __name__ == "__main__":
     )
 
     # Load statuses and replies from JSON files
-    statuses_file_path = 'statuses.json'
-    replies_file_path = 'replies.json'
+    statuses_file_path = 'path/to/statuses.json'
+    replies_file_path = 'path/to/replies.json'
     statuses = load_statuses(statuses_file_path)
     replies = load_replies(replies_file_path)
 
